@@ -8,23 +8,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
     <title>Document</title>
 </head>
 
 
 <body style="background-color: #e5e5e5;">
-    <header style="height: 10vw;">
-        <div >
-            <img src="/assets/imgs/pexels-photo-791763.webp" alt="" style="object-fit: cover; height: 10vw; width: 100%;">
-        </div>
-    </header>
+    <div class="" style="background-color: rgba(134, 132, 132, 0.597);">
+        <div class="row ">
+            <!-- Espaço vazio de 2 colunas à esquerda -->
+            <div class="col-md-2"></div>
 
+            <!-- Colunas centrais para o logo e o menu -->
+            <div class="col-md-8">
+                <header style="height: 10vw; display: flex; align-items: center; justify-content: space-between;">
+                    <!-- Espaço para o Logo -->
+                    <div style="flex-grow: 1;">
+                        <img src="/assets/imgs/lif-it 1.png" alt="Logo" style="height: 15vw;">
+                    </div>
+                    
+                    <!-- Botão Menu Hambúrguer -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" 
+                    style="border: solid 1px black; background-color: #00bf63; color: black; display: flex; align-items: center; justify-content: center;">
+                      <i class="ri-menu-line"></i>
+                    </button>
+                </header>
+             
+               
+            </div>
+
+            <!-- Espaço vazio de 2 colunas à direita -->
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <!-- Espaço opcional para um menu que será mostrado/oculto -->
+    <div class="collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- Adicione mais itens aqui conforme necessário -->
+        </ul>
+    </div>
 
     <style>
         .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px; /* Espaço entre as imagens */
         }
         .grid div {
@@ -35,7 +66,6 @@
     
         .grid img {
             width: 100%; /* Faz as imagens ocuparem todo o espaço da célula da grid */
-            height: auto; /* Mantém a proporção das imagens */
             border-radius: 10px; /* Opcional: Adiciona bordas arredondadas às imagens */
             height: 20vw;
             object-fit: cover;
@@ -72,6 +102,14 @@
                 <img src="/assets/imgs/img-header.jpeg" alt="Imagem 4">
                 <h1>texto 1</h1>
             </div>
+            <div>
+                <img src="/assets/imgs/img-header.jpeg" alt="Imagem 3">
+                <h1>texto 1</h1>
+            </div>
+            <div>
+                <img src="/assets/imgs/img-header.jpeg" alt="Imagem 4">
+                <h1>texto 1</h1>
+            </div>
             
         </div>
     </div>
@@ -82,11 +120,12 @@
 
 <style>
     .footer {
-        background-color: #333; /* ou a cor que desejar */
+        background-color: rgba(134, 132, 132, 0.597); 
         color: white;
         padding: 20px;
         text-align: center;
         font-family: Arial, sans-serif;
+     
     }
     .footer-grid {
         display: grid;
@@ -96,21 +135,30 @@
     .footer-title {
         font-size: 1.2em;
         margin-bottom: 15px;
+        color: black;
+    }
+    .footer-title h4{
+        font-weight: 600;
+    }
+    .footer-grid .professional h5{
+        color: black;
+        font-weight: 400;
     }
     .professional {
-        border-bottom: 1px solid #777; /* Cor da linha abaixo dos nomes */
+        border-bottom: 1px solid #777; 
         padding-bottom: 5px;
         margin-bottom: 15px;
     }
+    
 </style>
 
 <footer class="footer">
-    <div class="footer-title">ENTRE EM CONTATO COM NOSSOS PROFISSIONAIS</div>
+    <div class="footer-title"><h4>ENTRE EM CONTATO COM NOSSOS PROFISSIONAIS</h4></div>
     <div class="footer-grid">
-        <div class="professional">Alessandra Brum</div>
-        <div class="professional">Bruno Scheffer</div>
-        <div class="professional">Renato</div>
-        <div class="professional">Julio</div>
+        <div class="professional"><h5>Alessandra Brum</h5></div>
+        <div class="professional"><h5>Bruno Scheffer</h5></div>
+        <div class="professional"><h5>Renato Cariane</h5></div>
+        <div class="professional"><h5>Julio</h5></div>
     </div>
 </footer>
 </body>
