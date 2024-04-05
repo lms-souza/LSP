@@ -80,6 +80,9 @@
         font-size: 24px; /* Tamanho do texto */
         text-align: center; /* Garante que o texto esteja centralizado */
     }
+    .row{
+        --bs-gutter-x: 0rem !important;
+    }
     </style>
 <div class="row mt-4 mb-4">
     <div class="col-md-2"></div>
@@ -120,12 +123,15 @@
 
 <style>
     .footer {
-        background-color: rgba(134, 132, 132, 0.597); 
+       
         color: white;
         padding: 20px;
         text-align: center;
         font-family: Arial, sans-serif;
      
+    }
+    .rodape{
+        background-color: rgba(134, 132, 132, 0.597); 
     }
     .footer-grid {
         display: grid;
@@ -151,16 +157,21 @@
     }
     
 </style>
+<div class="row rodape">
+    <div class="col-md-2"></div>
+    <div class="col-md-8"><footer class="footer">
+        <div class="footer-title"><h4>ENTRE EM CONTATO COM NOSSOS PROFISSIONAIS</h4></div>
+        <div class="footer-grid">
+            <div class="professional"><h5>Alessandra Brum</h5></div>
+            <div class="professional"><h5>Bruno Scheffer</h5></div>
+            <div class="professional"><h5>Renato Cariane</h5></div>
+            <div class="professional"><h5>Julio</h5></div>
+        </div>
+    </footer></div>
+    <div class="col-md-2"></div>
+</div>
 
-<footer class="footer">
-    <div class="footer-title"><h4>ENTRE EM CONTATO COM NOSSOS PROFISSIONAIS</h4></div>
-    <div class="footer-grid">
-        <div class="professional"><h5>Alessandra Brum</h5></div>
-        <div class="professional"><h5>Bruno Scheffer</h5></div>
-        <div class="professional"><h5>Renato Cariane</h5></div>
-        <div class="professional"><h5>Julio</h5></div>
-    </div>
-</footer>
+
 </body>
 <script>
 
